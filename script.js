@@ -1,14 +1,4 @@
-// Smooth Scroll for navigation links
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-// Scroll to top button functionality
+// Scroll to top functionality
 let scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
 window.onscroll = function () {
