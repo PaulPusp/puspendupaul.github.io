@@ -1,48 +1,66 @@
 /* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+.wrapper {
+    width: 70%;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
 }
 
-/* Header Styles */
 header {
-    background: #333;
-    color: white;
     text-align: center;
-    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #4CAF50;
 }
 
 header h1 {
-    margin: 0;
     font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 header p {
-    margin: 10px 0;
     font-size: 1.2em;
+    color: #4CAF50;
 }
 
-/* Section Styles */
 section {
-    padding: 40px 0;
+    margin-bottom: 40px;
 }
 
-section h2 {
+h2 {
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 20px;
     text-align: center;
-    color: #333;
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     padding-left: 0;
 }
 
@@ -51,7 +69,10 @@ ul li {
     border-bottom: 1px solid #ddd;
 }
 
-/* Contact Styles */
+ul li:last-child {
+    border-bottom: none;
+}
+
 #contact ul {
     padding-left: 20px;
 }
@@ -60,13 +81,34 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* Footer Styles */
 footer {
     text-align: center;
-    background-color: #333;
-    color: white;
     padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
 }
