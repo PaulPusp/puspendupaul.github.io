@@ -1,194 +1,151 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<file path="index.html">
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puspendu Biswas Paul | Geospatial Data Scientist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
-    overflow-x: hidden;
-}
+    <header id="main-header">
+        <nav>
+            <div class="logo">
+                <a href="#">PBP</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
 
-.wrapper {
-    width: 70%;
-    max-width: 1200px;
-    background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    border-radius: 10px;
-}
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Puspendu Biswas Paul</h1>
+                <p>Geospatial Data Scientist & AI Researcher</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/puspendubiswaspaul/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/puspendu-paul" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://orcid.org/0009-0002-7216-0102" target="_blank" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+                </div>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </section>
 
-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    Geospatial Data Scientist with expertise in leveraging AI and remote sensing to solve complex environmental challenges. Proficient in analyzing large-scale SAR and optical satellite imagery using Python, Google Earth Engine, and ArcGIS Pro. Proven ability to engineer data pipelines, conduct advanced spatial analysis, and develop predictive models, contributing to projects in drought prediction and flood impact assessment. A collaborative researcher committed to translating data into actionable insights for environmental monitoring and disaster management.
+                </p>
+            </div>
+        </section>
 
-.logo-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    border: 4px solid #4CAF50;
-}
+        <section id="skills" class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming & Data Science</h3>
+                    <ul>
+                        <li>Python (Pandas, NumPy, Scikit-learn)</li>
+                        <li>GeoPandas & Matplotlib</li>
+                        <li>TensorFlow & Keras</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Geospatial & Remote Sensing</h3>
+                    <ul>
+                        <li>ArcGIS Pro</li>
+                        <li>Google Earth Engine (GEE)</li>
+                        <li>QGIS & SNAP</li>
+                        <li>HEC-HMS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases & Developer Tools</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>Git & GitHub</li>
+                        <li>Visual Studio Code</li>
+                        <li>Jupyter Notebook & Google Colab</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
+        <section id="projects" class="container">
+            <h2>Key Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>AI-Powered Fish Species Classification</h3>
+                    <p>Developed and trained a Convolutional Neural Network (CNN) to automatically classify freshwater fish species, achieving 95% accuracy on a test set of over 1,000 images. Architected the image processing pipeline using Python and OpenCV, and optimized the model with TensorFlow and Keras.</p>
+                    <a href="#" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <h3>SAR-Driven Flood Mapping & Impact Assessment</h3>
+                    <p>Analyzed Sentinel-1 SAR imagery to map the extent of the August 2024 monsoon flood in Bangladesh. Developed a Google Earth Engine script to automate data processing and correlated flood maps with land use data to estimate affected agricultural land and population displacement.</p>
+                    <a href="#" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
 
-header p {
-    font-size: 1.2em;
-    color: #4CAF50;
-}
+        <section id="experience" class="container">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Intern, RIMES</h3>
+                        <span class="date">Dhaka, Bangladesh | Aug 2023 - Nov 2023</span>
+                        <ul>
+                            <li>Aggregated and standardized multi-source crop yield data from 5+ South Asian countries for regional drought modeling.</li>
+                            <li>Conducted a systematic literature review of 50+ peer-reviewed papers on SAR-based drought indices, informing the project's methodology.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>University Research Associate, Sylhet Agricultural University</h3>
+                        <span class="date">Sylhet, Bangladesh | Jun 2021 - Jul 2022</span>
+                        <ul>
+                            <li>Engineered and managed a geospatial database containing over 100 GB of climate and remote sensing data for a multi-year drought prediction study.</li>
+                            <li>Performed time-series analysis in Python (Pandas, GeoPandas) to identify a statistically significant correlation between soil moisture deficits and crop failure.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+        <section id="contact" class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm currently seeking new opportunities and am open to collaborations. Feel free to reach out!</p>
+            <a href="mailto:puspendu.buaa@gmail.com" class="cta-button">Say Hello</a>
+        </section>
+    </main>
 
-header nav ul li {
-    margin: 0 15px;
-    position: relative;
-}
+    <footer>
+        <p>&copy; 2025 Puspendu Biswas Paul. All Rights Reserved.</p>
+    </footer>
 
-header nav ul li a {
-    color: #333;
-    text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #4CAF50;
-}
-
-/* Dropdown menu styles */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    color: #4CAF50;
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-ul li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-ul li:last-child {
-    border-bottom: none;
-}
-
-/* Hobby section styles */
-.hobby-gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.hobby-gallery img {
-    width: 30%;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-/* Contact styles */
-#contact ul {
-    padding-left: 20px;
-}
-
-#contact ul li {
-    margin-bottom: 10px;
-}
-
-button {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 15px;
-    font-size: 1.5em;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    margin-top: 40px;
-    border-radius: 10px;
-}
-
-footer p {
-    font-size: 1em;
-}
-
-@media screen and (max-width: 768px) {
-    .wrapper {
-        width: 90%;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    header p {
-        font-size: 1em;
-    }
-
-    section h2 {
-        font-size: 1.5em;
-    }
-
-    .hobby-gallery img {
-        width: 45%;
-    }
-}
+    <script src="script.js"></script>
+</body>
+</html>
+```
+    </file>
+    <file path="style.css">
