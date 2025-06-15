@@ -1,6 +1,3 @@
-    </file>
-    <file path="script.js">
-```javascript
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- Mobile Navigation Toggle ---
